@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.menu a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+img {
+    width: 30%;
+}
+
+footer ul {
+    list-style: square;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: lightblue;
+}
+
+form {
+    margin: 20px auto;
+    width: 60%;
+}
+
+fieldset {
+    width: 50%;
+    padding: 20px;
+    border: 2px solid hsl(7, 80%, 50%);
+    background-color: rgba(255, 81, 0, 0.1);
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    border-color: red;
+    outline: none;
+    background-color: #fff7e6;
+}
+
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="email"]:valid {
+    border-color: green;
+}

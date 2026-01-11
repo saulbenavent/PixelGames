@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: red;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Pseudo-classe */
+.menu a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+img {
+    width: 30%;
+}
+
+footer ul {
+    list-style: square;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    color: lightblue;
+}
