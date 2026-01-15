@@ -130,6 +130,10 @@ footer>img{
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .mapa iframe {
@@ -185,4 +189,8 @@ footer>img{
     border: 1px solid #ccc;
     font-size: 1rem;
     background-color: white;
+}
+
+.iconos{
+    width: 25px;
 }
