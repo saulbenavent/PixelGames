@@ -147,8 +147,3 @@ table.horario tr:nth-child(even) {
 table.horario tr:hover {
     background-color: rgba(255, 0, 0, 0.3);
 }
-
-td:contains("Cerrado") {
-    color: red;
-    font-weight: bold;
-}

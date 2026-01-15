@@ -24,51 +24,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <form action="/enviar-formulario" method="POST" enctype="multipart/form-data" class="contact-form">
-            <fieldset>
-                <legend>Atención al cliente</legend>
-                <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <main class="contacto">
+        <section class="info">
+            <div class="cajas">
+                <div class="caja">📞 908 30 43 78</div>
+                <div class="caja">💬 609 23 89 12</div>
+                <div class="caja">✉ pixelg@gmail.com</div>
+                <div class="caja">🏪 Tienda disponible</div>
+            </div>
 
-                <label for="email">Correo electrónico *</label>
-                <input type="email" id="email" name="email" required>
+            <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.2634915816116!2d-0.538061322669341!3d38.986482371705094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61a201e7d1eb61%3A0xf0250efa87a28639!2sIES%20Doctor%20Luis%20Simarro!5e0!3m2!1ses!2ses!4v1768472876157!5m2!1ses!2ses"></iframe>
+            </div>
+        </section>
 
-                <label for="asunto">Asunto *</label>
-                <select id="asunto" name="asunto" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="sugerencia">Sugerencia para la web</option>
-                    <option value="opinion">Opinión sobre contenido</option>
-                    <option value="error">Reporte de error</option>
-                    <option value="colaboracion">Propuesta de colaboración</option>
-                    <option value="consulta">Consulta general</option>
+        <section class="formulario">
+            <h2>Formulario</h2>
+
+            <form action="/enviar-formulario" method="POST">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Asunto">
+                
+                <select name="asunto" required>
+                    <option value="">Selecciona la categoría</option>
+                    <option value="sugerencia">Sugerencias</option>
+                    <option value="opinion">Comentarios</option>
+                    <option value="error">Reporte de fallo</option>
+                    <option value="colaboracion">Propuestas</option>
+                    <option value="consulta">Consulta</option>
                 </select>
 
-                <label for="plataforma">Plataforma (opcional)</label>
-                <select id="plataforma" name="plataforma">
-                    <option value="">No especificar</option>
+                <select name="plataforma">
+                    <option value="">Selecciona la plataforma</option>
                     <option value="pc">PC</option>
                     <option value="playstation">PlayStation</option>
                     <option value="xbox">Xbox</option>
                     <option value="nintendo">Nintendo</option>
-                    <option value="movil">Móvil</option>
-                    <option value="multi">Multiplataforma</option>
+                    <option value="movil">Mobile</option>
+                    <option value="multi">Multiplatforma</option>
                 </select>
+                <textarea rows="6" placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
-
-                <label for="archivo">Adjuntar archivo (opcional)</label>
-                <input type="file" id="archivo" name="archivo">
-
-                <label class="checkbox">
-                    <input type="checkbox" required>
-                    Acepto el tratamiento de mis datos para recibir respuesta a mi consulta.
-                </label>
-
-                <button type="submit">Enviar mensaje</button>
-            </fieldset>
-        </form>
     </main>
     <footer>
         <h2>Redes Sociales</h2>
