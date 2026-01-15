@@ -10,7 +10,7 @@
 <body>
     <header class="contenedor">
         <div id="titulo">
-            <h1>PIXEL GAMES</h1>
+            <h1>GAMES</h1>
         </div>
         <div id="logo">
             <img src="./imatges/logo-solo-transparent-png.png" alt="logo">
@@ -18,34 +18,55 @@
         <nav class="menu">
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./contacte.html">Contacto</a></li>
+                <li><a class="activo" href="./contacte.html">Contacto</a></li>
                 <li><a href="./videos.html">Videos</a></li>
                 <li><a href="./horari.html">Horario</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action="#">
+        <form action="/enviar-formulario" method="POST" enctype="multipart/form-data" class="contact-form">
             <fieldset>
-                <legend><b>Contácta Aquí</b></legend>
-                <br>
-                <label for="nombre">Nombre
-                    <input type="text">
+                <legend>Atención al cliente</legend>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto *</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="sugerencia">Sugerencia para la web</option>
+                    <option value="opinion">Opinión sobre contenido</option>
+                    <option value="error">Reporte de error</option>
+                    <option value="colaboracion">Propuesta de colaboración</option>
+                    <option value="consulta">Consulta general</option>
+                </select>
+
+                <label for="plataforma">Plataforma (opcional)</label>
+                <select id="plataforma" name="plataforma">
+                    <option value="">No especificar</option>
+                    <option value="pc">PC</option>
+                    <option value="playstation">PlayStation</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="nintendo">Nintendo</option>
+                    <option value="movil">Móvil</option>
+                    <option value="multi">Multiplataforma</option>
+                </select>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+
+                <label for="archivo">Adjuntar archivo (opcional)</label>
+                <input type="file" id="archivo" name="archivo">
+
+                <label class="checkbox">
+                    <input type="checkbox" required>
+                    Acepto el tratamiento de mis datos para recibir respuesta a mi consulta.
                 </label>
-                <label for="apellidos">Apellidos
-                    <input type="text">
-                </label>
-                <br><br>
-                <label for="email">E-mail
-                    <input type="email">
-                </label>
-                <br><br>
-                <label for="cuestión"> ¿En qué necesitas ayuda? <br>
-                <textarea name="cuestión" id="cuestión" cols="40" rows="5"></textarea>
-                </label>
-                <br><br>
-                <button type="reset">Reset</button>
-                <button type="submit">Enviar</button>
+
+                <button type="submit">Enviar mensaje</button>
             </fieldset>
         </form>
     </main>

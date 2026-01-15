@@ -29,6 +29,10 @@ header {
     border: 0;
 }
 
+#titulo>h1::before {
+    content: "PIXEL";
+    color: red;
+}
 
 #logo {
     flex: 1;
@@ -64,6 +68,9 @@ header {
     text-decoration: none;
 }
 
+.menu a.activo {
+    color: red;
+}
 
 /* FOOTER */
 

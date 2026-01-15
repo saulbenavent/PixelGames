@@ -29,6 +29,10 @@ header {
     border: 0;
 }
 
+#titulo>h1::before {
+    content: "PIXEL";
+    color: red;
+}
 
 #logo {
     flex: 1;
@@ -62,6 +66,10 @@ header {
 .menu a:hover {
     color: red;
     text-decoration: none;
+}
+
+.menu a.activo {
+    color: red;
 }
 
 
@@ -118,11 +126,12 @@ form {
 }
 
 fieldset {
-    width: 40%;
+    width: 100%;
     padding: 20px;
-    border: 2px solid hsl(7, 80%, 50%);
-    background-color: rgba(255, 81, 0, 0.1);
+    border: 3px solid red;
+    background-color: rgb(254, 255, 171);
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 fieldset label {
