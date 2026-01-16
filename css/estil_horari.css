@@ -62,15 +62,27 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+    padding: 6px 12px;
+    transition: 
+        font-size 0.2s ease,
+        color 0.2s ease,
+        text-shadow 0.2s ease,
+        font-weight 0.2s ease;
+    text-shadow: none;
+    font-weight: normal;
 }
 
 .menu a:hover {
     color: red;
-    text-decoration: none;
+    font-size: 1.25em;
+    text-shadow: 0px 5px 5px red;    
+
 }
 
 .menu a.activo {
     color: red;
+    text-shadow: 0px 5px 5px red;
+    font-weight: bold; 
 }
 
 
