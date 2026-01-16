@@ -148,14 +148,19 @@ main {
     margin: 0 auto;
     padding: 20px;
     background-color: rgb(201, 201, 201);
-    height: 85vh;
 }
 
-h1 {
+main>h1 {
     color: red;
     font-size: 2rem;
     border-bottom: solid 3px red;
     margin-bottom: 30px;
+}
+
+main>h2{
+    color: #333;
+    border-bottom: 3px solid #333;
+    margin-bottom: 20px;
 }
 
 p {
@@ -187,4 +192,21 @@ table.horario tr:nth-child(even) {
 
 table.horario tr:hover {
     background-color: rgba(255, 0, 0, 0.3);
+}
+
+#contenedor_imagenes img{
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+#contenedor_imagenes img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px black;
+}
+
+#contenedor_imagenes div{
+    width: 50%;
+    float: left;
+    padding: 30px;
 }

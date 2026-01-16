@@ -173,6 +173,7 @@ main video {
     border: 3px solid #333;
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .videos h2 {
@@ -184,7 +185,6 @@ main video {
 
 main video:hover {
     transform: scale(1.05);
-    transition: 0.3s;
     box-shadow: 0 0 15px rgba(255, 0, 68, 0.7);
 }
 
