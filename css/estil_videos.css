@@ -123,18 +123,19 @@ footer {
 .botones {
     width: 60px;
     height: 60px;
-    background: red;
-    color: white;
+    background: transparent;
+    color: transparent;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-decoration: none;
-    border-radius: 5px;
     transition: 0.3s;
 }
 
+.botones>img{
+    width: 50px;
+    border-radius: 15px;
+}
+
 .botones:hover {
-    background: darkred;
     transform: scale(1.1);
 }
 
