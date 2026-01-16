@@ -8,15 +8,21 @@
 body{
     background-image: url(../imatges/fondo_página.jpg);
     background-size: cover;
+    margin-top: 135px;
 }
 
 /* HEADER */
 
 header {
-  background-color: black;
-  padding: 20px;
-  display: flex;
-  align-items: center;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 #titulo {
@@ -142,7 +148,7 @@ footer {
 }
 
 .botones>img{
-    width: 50px;
+    width: 100%;
     border-radius: 15px;
 }
 
