@@ -100,6 +100,7 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+    z-index: 1;
 }
 
 #video_footer{
@@ -167,7 +168,6 @@ main {
     margin: 0 auto;
     padding: 20px;
     background-color: rgb(201, 201, 201);
-    height: 85vh;
 }
 
 h1 {
@@ -186,10 +186,9 @@ main>section>p {
 
 
 #inici {
-    width: 800px;
+    width: 80vh;
     border: 3px solid red;
     border-radius: 15px;
-    margin-bottom: 22px;
     display: block;
     margin: 0 auto;
 }
