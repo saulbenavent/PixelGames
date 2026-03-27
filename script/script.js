@@ -1,3 +1,5 @@
+document.documentElement.style.visibility = "hidden";
+
 function demanarDades() {
     var dades = [];
     var errors;
@@ -10,8 +12,10 @@ function demanarDades() {
 
     if (errors.length > 0) {
         alert(errors.join("\n"));
+        document.documentElement.style.visibility = "visible";
         document.body.innerHTML = "<h1>Acces denegat</h1>";
     } else {
+        document.documentElement.style.visibility = "visible";
         alert(
             "Acces concedit\nDNI: " + majusculaDni(dades["dni"]) +
             "\nNom: " + majusculaNom(dades["nom"]) +
